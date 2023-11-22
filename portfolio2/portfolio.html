@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a; /* Dark background color */
+            background-color: #121212; /* Dark background color */
             color: #ffffff; /* Text color */
             margin: 0;
             padding: 0;
@@ -18,6 +18,16 @@
         header {
             text-align: center;
             padding: 20px;
+            background-color: #1a1a1a; /* Dark header background color */
+        }
+
+        .header-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1, h2, p {
+            margin: 0;
         }
 
         img {
@@ -36,11 +46,15 @@
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            background-color: #232323; /* Dark section background color */
+            padding: 30px;
+            margin: 20px 0;
         }
 
         footer {
             text-align: center;
             padding: 20px;
+            background-color: #1a1a1a; /* Dark footer background color */
         }
 
         .footer-content {
@@ -49,18 +63,20 @@
             transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
 
-        /* Add more styling as needed */
+        .social-icon i {
+            font-size: 2em; /* Adjust the font size as needed */
+        }
 
-        /* Add media query for responsiveness if needed */
+        /* Add more styling as needed */
     </style>
     <title>Your Portfolio</title>
 </head>
 <body>
 
     <header>
-        <div class="header-content">
-            <h1 class="animate">Navneet Madhu</h1>
-            <p class="animate">STUDENT-WEB DEVELOPER-TECH ENTHUSIANST...</p>
+        <div class="header-content animate">
+            <h1>Navneet Madhu</h1>
+            <p>STUDENT - WEB DEVELOPER - TECH ENTHUSIAST...</p>
         </div>
     </header>
     
@@ -69,24 +85,37 @@
     <section class="about animate">
         <div class="container">
             <h2>About Me</h2>
-            Hello, myself Navneet Madhu. I am a student at COLLEGE OF ENGINEERING ARANMULA and currently pursuing my Bachelor's degree. I am a tech enthusiast who loves to explore technology deeply and implement it in our day-to-day life.My journey into the world of web development began with a curiosity to understand how things work on the internet. Over time, I've honed my skills in front-end and back-end technologies, embracing the dynamic and ever-evolving nature of the tech industry.Beyond coding, I love exploring the intersections of design and functionality to create user-friendly and visually appealing web applications. I believe that technology, when wielded with creativity and purpose, has the potential to make a positive impact on our lives.Let's connect and explore the possibilities together!
+            <p>
+                Hi there! I'm Navneet Madhu, a passionate student currently pursuing my Bachelor's degree at COLLEGE OF ENGINEERING ARANMULA. I have a keen interest in technology and its transformative power.
+            </p>
+            <p>
+                My journey into the world of web development began with a curiosity to understand how things work on the internet. Over time, I've honed my skills in front-end and back-end technologies, embracing the dynamic and ever-evolving nature of the tech industry.
+            </p>
+            <p>
+                Beyond coding, I love exploring the intersections of design and functionality to create user-friendly and visually appealing web applications. I believe that technology, when wielded with creativity and purpose, has the potential to make a positive impact on our lives.
+            </p>
+            <p>
+                When I'm not immersed in the world of programming, you can find me exploring the latest tech trends, engaging in collaborative coding projects, or simply enjoying a good cup of coffee while brainstorming innovative solutions to real-world problems.
+            </p>
+            <p>
+                Let's connect and explore the possibilities together!
+            </p>
         </div>
     </section>
     
     <section class="contact animate">
         <div class="container">
             <h2>Contact</h2>
-            E-mail: navneetmadhu24@gmail.com
-            <br>
-            Phone no: 9313550377
+            <p>E-mail: navneetmadhu24@gmail.com</p>
+            <p>Phone no: 9313550377</p>
         </div>
     </section>
 
     <footer>
         <div class="footer-content animate">
-            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-github fa-3x"></i></a>
-            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="your-github-link" target="_blank" class="social-icon"><i class="fab fa-github fa-3x"></i></a>
+            <a href="your-linkedin-link" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="your-instagram-link" target="_blank" class="social-icon"><i class="fab fa-instagram fa-3x"></i></a>
             <!-- Add more social media icons as needed -->
         </div>
     </footer>
