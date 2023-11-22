@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* Text color */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            margin: 20px auto;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .about,
+        .contact {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* Add more styling as needed */
+
+        /* Add media query for responsiveness if needed */
+    </style>
+    <title>Your Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1 class="animate">Navneet Madhu</h1>
+            <p class="animate">STUDENT-WEB DEVELOPER-TECH ENTHUSIANST...</p>
+        </div>
+    </header>
+    
+    <img class="animate" src="photo.jpeg">
+
+    <section class="about animate">
+        <div class="container">
+            <h2>About Me</h2>
+            Hello, myself Navneet Madhu. I am a student at COLLEGE OF ENGINEERING ARANMULA and currently pursuing my Bachelor's degree. I am a tech enthusiast who loves to explore technology deeply and implement it in our day-to-day life.My journey into the world of web development began with a curiosity to understand how things work on the internet. Over time, I've honed my skills in front-end and back-end technologies, embracing the dynamic and ever-evolving nature of the tech industry.Beyond coding, I love exploring the intersections of design and functionality to create user-friendly and visually appealing web applications. I believe that technology, when wielded with creativity and purpose, has the potential to make a positive impact on our lives.Let's connect and explore the possibilities together!
+        </div>
+    </section>
+    
+    <section class="contact animate">
+        <div class="container">
+            <h2>Contact</h2>
+            E-mail: navneetmadhu24@gmail.com
+            <br>
+            Phone no: 9313550377
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content animate">
+            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-github fa-3x"></i></a>
+            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="your-social-media-link" target="_blank" class="social-icon"><i class="fab fa-instagram fa-3x"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.animate');
+            
+            elements.forEach(element => {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateY(0)';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
